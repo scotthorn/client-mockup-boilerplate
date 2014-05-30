@@ -1,0 +1,205 @@
+/* html5doctor.com Reset v1.6.1 - http://cssreset.com */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}
+
+/* General Styles */
+* {
+    font-family: Helvetica, Arial, Sans-serif;
+}
+.clearfix:after {
+    content: ',';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.content-wrapper {
+    width: 100%;
+    max-width: 960px;
+    margin: auto;
+    position: relative;
+}
+.wide-wrapper {
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+    position: relative;
+}
+.table {
+    display: table;
+}
+.table-row {
+    display: table-row;
+    height: 100%;
+}
+.table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* UK Global Navigation */
+#the-bar {
+    background: #222;
+    height: 49px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 9px;
+}
+#the-bar a {
+    color: white;
+    text-decoration: none;
+}
+#the-bar a:hover {
+    text-decoration: underline;
+}
+#breadcrumb {
+    display: inline-block;
+    margin-top: 3px;
+}
+#breadcrumb li {
+    display: inline-block;
+    font-size: 11px;
+    position: relative;
+    top: -3px;
+    height: 11px;
+}
+#bar-uk {
+    height: 33px;
+    border-right: solid thin #aaa;
+    padding-right: 17px;
+    margin-right: 13px;
+}
+#bar-unit {
+    height: 31px;
+}
+#bar-search {
+    position: absolute;
+    right: 0;
+    top: 1px;
+    border: solid 1px white;
+}
+#bar-search input {
+    background: none;
+    border: none;
+    border-right: solid 1px white;
+    margin: 0;
+    padding: 4px 9px;
+}
+#bar-search button {
+    border: 0;
+    background: url("//www.as.uky.edu/sites/all/themes/as_theme/images/search-button.png") no-repeat scroll center top transparent;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0;
+    height: 16px;
+    line-height: 0;
+    margin-left: 0;
+    margin-right: 0;
+    overflow: hidden;
+    padding: 0;
+    text-indent: -9999px;
+    width: 30px;
+    position: relative;
+    top: -6px;
+    
+}
+
+/********************** 
+
+    A&S specifics 
+
+**********************/
+
+body {
+    background: #FCD4BB;
+}
+#header {
+    background: #172A3E;
+    padding: 7px 0;
+    overflow: hidden;
+    position: relative;
+}
+#header .background {
+  background: url(images/mcl-background.png) no-repeat center -61px; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.6;
+}
+#header-as {
+    height: 90px;
+    opacity: 0.5;
+}
+#site-title {
+    position: relative;
+    top: -7px;
+    left: -0px;
+}
+
+#main-menu {
+    text-align: center;
+}
+#main-menu li {
+    display: inline-block;
+    padding: 14px 17px;
+}
+#main-menu a {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+}
+#main {
+    background: white;
+}
+#media-nav {
+    font-size: 0;
+}
+#media-nav li {
+    display: inline-block;
+    width: 14.5%;
+    font-size: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    background: #0B243B;
+    margin: 6px 0.5%;
+    padding: 7px 0;
+}
+#media-nav li.pager {
+    width: 20%;
+    background: none;
+    color: #FCD4BB
+}
+#media-nav li.pager i {
+    padding: 0 2px;
+    font-size: 26px;
+    position: relative;
+    top: 3px;
+}
+i.active {
+    color: #172A3E
+}
+#media-nav a {
+    color: white;
+    text-decoration: none;
+}
+.padded-content {
+    padding: 6px 42px 19px;
+    font-size: 17px;
+    line-height: 1.4;
+}
+footer {
+    background: #172A3E;
+    text-align: center;
+    padding: 32px 0;
+    position: relative;
+}
+footer img {
+    height: 150px;
+    width: auto;
+}
