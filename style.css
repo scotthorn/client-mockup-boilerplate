@@ -18,17 +18,24 @@ img {
 }
 .content-wrapper {
     width: 100%;
-    max-width: 934px;
+    max-width: 960px;
     margin: auto;
     position: relative;
     padding: 0 13px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 .wide-wrapper {
     width: 100%;
-    max-width: 1024px;
+    max-width: 1061px;
     margin: auto;
     position: relative;
     padding: 0 19px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.responsive-element {
+  display: none;
 }
 .table {
     display: table;
@@ -68,13 +75,16 @@ img {
     top: -3px;
     height: 11px;
 }
-#bar-uk {
+#breadcrumb li.responsive-element {
+  display: none;
+}
+#bar-uk img {
     height: 33px;
     border-right: solid thin #aaa;
     padding-right: 17px;
     margin-right: 13px;
 }
-#bar-unit {
+#bar-unit img {
     height: 31px;
 }
 #bar-search {
@@ -108,6 +118,27 @@ img {
     background: none;
 }
 
+/* Demo */
+#demo-controls {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 19px;
+  background: hsla(272, 42%, 42%, 0.42);
+  box-shadow: 0px 0px 19px -3px rgba(0, 0, 0, 0.6);
+  margin: 19px;
+  border-radius: 7px;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+#demo-controls:hover {
+  background-color: hsla(272, 42%, 42%, 0.9);
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
 /********************** 
 
     A&S specifics 
@@ -119,7 +150,7 @@ body {
 }
 #header {
     background: #172A3E;
-    padding: 7px 0;
+    padding: 14px 0;
     overflow: hidden;
     position: relative;
 }
@@ -198,13 +229,81 @@ i.active {
     font-size: 17px;
     line-height: 1.4;
 }
-footer {
+#footer {
     background: #172A3E;
     text-align: center;
     padding: 32px 0;
     position: relative;
 }
-footer img {
+#footer img {
     height: 150px;
     width: auto;
+}
+
+@media screen and (max-width: 799px) {
+  #breadcrumb #bar-unit {
+    display: none;
+  }
+  #breadcrumb #bar-unit-wo-college {
+    display: inline-block;
+  }
+  #bar-unit-wo-college img {
+    height: 31px
+  }
+}
+
+@media screen and (max-width: 699px) {
+  #breadcrumb #bar-uk {
+    display: none;
+  }
+  #breadcrumb #bar-uk-memorial {
+    display: inline-block;
+  }
+  #bar-uk-memorial img {
+    height: 31px;
+    border-right: solid 1px #aaa;
+    padding-right: 13px;
+    margin-right: 7px;
+  }
+  #the-bar {
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  #bar-search {
+    display: none;
+  }
+  #bar-search-responsive-toggle {
+    display: inline-block;
+    position: absolute;
+    top: -6px;
+    right: 7px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 29px;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  #breadcrumb #bar-uk-memorial,
+  #breadcrumb #bar-unit-wo-college{
+    display: none;
+  }
+  #breadcrumb #bar-uk {
+    display: inline-block;
+  }
+  #bar-uk img {
+    border-right: none;
+    margin-right: 0;
+  }
+  #the-bar {
+    text-align: center;
+  }
+  #bar-search-responsive-toggle {
+    position: relative;
+    top: -11px;
+    right: 0;
+  }
 }
