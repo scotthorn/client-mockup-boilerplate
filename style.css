@@ -12,17 +12,23 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
     height: 0;
     visibility: hidden;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 .content-wrapper {
     width: 100%;
-    max-width: 960px;
+    max-width: 934px;
     margin: auto;
     position: relative;
+    padding: 0 13px;
 }
 .wide-wrapper {
     width: 100%;
     max-width: 1024px;
     margin: auto;
     position: relative;
+    padding: 0 19px;
 }
 .table {
     display: table;
@@ -73,34 +79,33 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
 }
 #bar-search {
     position: absolute;
-    right: 0;
-    top: 1px;
-    border: solid 1px white;
+    right: 13px;
+    top: 3px;
+    border: solid 1px #aaa;
 }
 #bar-search input {
     background: none;
     border: none;
-    border-right: solid 1px white;
+    border-right: solid 1px #aaa;
     margin: 0;
-    padding: 4px 9px;
+    padding: 3px 7px;
+    color: #f3f3f3;
+    font-size: 13px;
+    outline: none;
 }
 #bar-search button {
     border: 0;
-    background: url("//www.as.uky.edu/sites/all/themes/as_theme/images/search-button.png") no-repeat scroll center top transparent;
     cursor: pointer;
     display: inline-block;
     font-size: 0;
-    height: 16px;
     line-height: 0;
     margin-left: 0;
     margin-right: 0;
-    overflow: hidden;
-    padding: 0;
-    text-indent: -9999px;
-    width: 30px;
+    padding: 2px 6px 2px 2px;
     position: relative;
-    top: -6px;
-    
+    color: #f3f3f3;
+    font-size: 16px;
+    background: none;
 }
 
 /********************** 
