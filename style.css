@@ -93,7 +93,11 @@ img {
     top: 3px;
     border: solid 1px #aaa;
 }
-#bar-search input {
+#bar-menu-search {
+    border: solid 1px #aaa;
+}
+#bar-search input,
+#bar-menu-search input {
     background: none;
     border: none;
     border-right: solid 1px #aaa;
@@ -103,7 +107,13 @@ img {
     font-size: 13px;
     outline: none;
 }
-#bar-search button {
+#bar-menu-search input {
+  font-size: 17px;
+  width: 140px;
+  padding: 6px 9px;
+}
+#bar-search button,
+#bar-menu-search button {
     border: 0;
     cursor: pointer;
     display: inline-block;
@@ -116,6 +126,84 @@ img {
     color: #f3f3f3;
     font-size: 16px;
     background: none;
+}
+#bar-menu {
+  position: absolute;
+  top: 0;
+  right: 19px;
+}
+#bar-menu .menu-toggle {
+  background: none;
+  border: solid 1px #888;
+  color: #ccc;
+  font-size: 14px;
+  padding: 5px 11px;
+  cursor: pointer;
+  outline: none;
+}
+#bar-menu .menu-toggle:hover {
+  background: #334153;
+}
+body.bar-menu-open {
+  overflow: hidden;
+}
+body.bar-menu-open #bar-menu .menu-toggle {
+  background: #005daa;
+}
+#bar-menu nav {
+  position: absolute;
+  z-index: 101;
+  top: 37px;
+  right: -6px;
+  width: 196px;
+  background: #333439;
+  padding: 0 8px;
+  box-shadow: 0 4px 13px -1px rgba(0, 0, 0, 0.8);
+  text-align: center;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.1s;
+  transition: padding 0s linear 0.05s;
+}
+body.bar-menu-open #bar-menu nav {
+  padding: 11px 8px;
+  max-height: 300px;
+  transition: max-height 0.5s;
+}
+#bar-menu ul {
+  display: inline-block;
+  text-align: left;
+  width: 83%;
+}
+#bar-menu li {
+  line-height: 1.6
+}
+#bar-menu li.home-link {
+  margin-top: 9px;
+  border-bottom: solid 1px #bbb;
+  margin-bottom: 7px;
+}
+#bar-menu a:hover {
+  text-decoration: none;
+  color: #aaa;
+}
+#menu-backwash {
+  background: rgba(0, 5, 10, 0.8);
+  position: absolute;
+  top: 49px;
+  bottom: 0;
+  left: 9999px;
+  right: 0;
+  z-index: 100;
+  opacity: 0;
+  transition: opacity 0.1s;
+  transition: left 0s linear 0.2s;
+}
+
+body.bar-menu-open #menu-backwash {
+  opacity: 1;
+  transition: opacity 0.2s;
+  left: 0;
 }
 
 /* Demo */
@@ -137,6 +225,14 @@ img {
   -webkit-transition: background-color 0.3s;
   -moz-transition: background-color 0.3s;
   transition: background-color 0.3s;
+}
+body [class*='version-'] {
+  display: none;
+}
+.version-1 .version-1,
+.version-2 .version-2,
+.version-3 .version-3 {
+  display: inherit;
 }
 
 /********************** 
@@ -240,6 +336,8 @@ i.active {
     width: auto;
 }
 
+/* Begin Responsive */
+
 @media screen and (max-width: 799px) {
   #breadcrumb #bar-unit {
     display: none;
@@ -295,8 +393,7 @@ i.active {
     display: inline-block;
   }
   #bar-uk img {
-    border-right: none;
-    margin-right: 0;
+    /border-right: none;
   }
   #the-bar {
     text-align: center;

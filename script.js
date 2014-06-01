@@ -13,5 +13,12 @@ $(document).ready(function(){
 		}, 100);
 	}).change();
 
+	$('#bar-menu .menu-toggle').click(function(){
+		body.toggleClass('bar-menu-open');
+		window.scrollTo(0,0);
+	});
 	
+	$('#menu-backwash').click(function(){
+		body.removeClass('bar-menu-open');
+	});
 });
