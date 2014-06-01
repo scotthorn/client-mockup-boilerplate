@@ -162,7 +162,7 @@ body.bar-menu-open #bar-menu .menu-toggle {
   position: absolute;
   z-index: 101;
   top: 39px;
-  right: -99999px;
+  right: 99999px;
   width: 196px;
   background: #333439;
   padding: 11px 8px;
