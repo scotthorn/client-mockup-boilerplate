@@ -95,6 +95,7 @@ img {
 }
 #bar-menu-search {
     border: solid 1px #aaa;
+    text-align: left;
 }
 #bar-search input,
 #bar-menu-search input {
@@ -127,6 +128,11 @@ img {
     font-size: 16px;
     background: none;
 }
+#bar-menu-search button {
+  font-size: 19px;
+  top: 2px;
+  left: 3px;
+}
 #bar-menu {
   position: absolute;
   top: 0;
@@ -136,10 +142,12 @@ img {
   background: none;
   border: solid 1px #888;
   color: #ccc;
-  font-size: 14px;
-  padding: 5px 11px;
+  font-size: 16px;
+  padding: 7px 11px;
   cursor: pointer;
   outline: none;
+  position: relative;
+  top: -4px;
 }
 #bar-menu .menu-toggle:hover {
   background: #334153;
@@ -153,22 +161,20 @@ body.bar-menu-open #bar-menu .menu-toggle {
 #bar-menu nav {
   position: absolute;
   z-index: 101;
-  top: 37px;
-  right: -6px;
+  top: 39px;
+  right: -99999px;
   width: 196px;
   background: #333439;
-  padding: 0 8px;
+  padding: 11px 8px;
   box-shadow: 0 4px 13px -1px rgba(0, 0, 0, 0.8);
   text-align: center;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.1s;
-  transition: padding 0s linear 0.05s;
 }
 body.bar-menu-open #bar-menu nav {
-  padding: 11px 8px;
-  max-height: 300px;
+  max-height: 400px;
   transition: max-height 0.5s;
+  right: -6px;
 }
 #bar-menu ul {
   display: inline-block;
@@ -366,13 +372,33 @@ i.active {
   #the-bar {
     padding-top: 10px;
   }
+  body.bar-menu-open #bar-menu nav {
+    width: 300px;
+    max-height: 600px;
+    padding: 13px 11px;
+    right: -9px;
+  }
+  #bar-menu li {
+    font-size: 19px;
+    line-height: 2.1;
+  }
+  #bar-menu-search input {
+    width: 213px;
+    font-size: 23px;
+    padding: 17px 11px
+  }
+  #bar-menu-search button {
+    font-size: 37px;
+    top: 7px;
+    left: 7px;
+  }
 }
 
 @media screen and (max-width: 599px) {
   #bar-search {
     display: none;
   }
-  #bar-search-responsive-toggle {
+  .version-1 #bar-search-responsive-toggle {
     display: inline-block;
     position: absolute;
     top: -6px;
@@ -392,15 +418,65 @@ i.active {
   #breadcrumb #bar-uk {
     display: inline-block;
   }
+  .version-2 #bar-uk img {
+    border-right: none;
+  }
   #bar-uk img {
     /border-right: none;
   }
-  #the-bar {
+  .version-1 #the-bar {
     text-align: center;
   }
   #bar-search-responsive-toggle {
     position: relative;
     top: -11px;
     right: 0;
+  }
+  body.bar-menu-open #bar-menu nav {
+    position: fixed;
+    top: 49px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-height: 900px;
+    height: auto;
+    width: auto;
+  }
+  #bar-menu-search {
+    position: relative;
+  }
+  #bar-menu-search input {
+    border-right: none;
+    width: 100%;
+    padding-right: 42px;
+  }
+  #bar-menu-search button {
+    position: absolute;
+    right: 7px;
+    left: auto;
+  }
+  #bar-menu ul {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 77px;
+    bottom: 0;
+    overflow-y: scroll;
+  }
+  #bar-menu ul a {
+    display: block;
+    padding: 9px 11px;
+    background: ;
+    border-bottom: solid 2px #999
+  }
+  #bar-menu li.home-link {
+    margin-bottom: 0;
+    border-bottom: none;
+    margin-top: 13px;
+  }
+  #bar-menu li.home-link a {
+    background: #005daa;
+    border-bottom: none;
   }
 }

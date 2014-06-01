@@ -14,8 +14,21 @@ $(document).ready(function(){
 	}).change();
 
 	$('#bar-menu .menu-toggle').click(function(){
-		body.toggleClass('bar-menu-open');
-		window.scrollTo(0,0);
+		if (body.hasClass('bar-menu-open')) {
+			body.removeClass('bar-menu-open');
+		}
+		else {
+			window.scrollTo(0,0);
+			body.addClass('bar-menu-open');
+			// On desktops, auto-focus on the search box.
+			if (window.innerWidth >= 960) {
+				setTimeout(function(){
+					// Delayed to avoid an odd bug where the search box jumps.
+					$('#bar-menu-search input').focus();
+				}, 100);
+			}
+		}
+		
 	});
 	
 	$('#menu-backwash').click(function(){
