@@ -219,16 +219,17 @@ body.bar-menu-open #menu-backwash {
   bottom: 0;
   right: 0;
   padding: 19px;
-  background: hsla(272, 42%, 42%, 0.42);
+  background: rgba(0, 89, 238, 0.72);
   box-shadow: 0px 0px 19px -3px rgba(0, 0, 0, 0.6);
   margin: 19px;
   border-radius: 7px;
   -webkit-transition: background-color 0.3s;
   -moz-transition: background-color 0.3s;
   transition: background-color 0.3s;
+  color: white;
 }
 #demo-controls:hover {
-  background-color: hsla(272, 42%, 42%, 0.9);
+  background-color: rgba(0, 89, 238, 1);
   -webkit-transition: background-color 0.3s;
   -moz-transition: background-color 0.3s;
   transition: background-color 0.3s;
@@ -254,7 +255,6 @@ body {
 #header {
     background: #172A3E;
     padding: 14px 0;
-    overflow: hidden;
     position: relative;
 }
 #header .background {
@@ -279,7 +279,80 @@ body {
     top: -7px;
     left: -0px;
 }
-
+#site-controls {
+  position: absolute;
+  right: 19px;
+  bottom: 0;
+}
+#site-controls button {
+  border: none;
+  color: #172a3e;
+  font-size: 29px;
+  position: absolute;
+}
+#site-search {
+  background: #f57c2d;
+  position: absolute;
+  bottom: 51px;
+  right: 0px;
+  width: 56px;
+  height: 42px;
+  display: block;
+  overflow: hidden;
+  border-radius: 4px;
+  transition: width 0.1s;
+}
+#site-search ::-webkit-input-placeholder {
+  color: #5f6a75;
+}
+#site-search button {
+  top: 1px;
+  right: 6px;
+  background: none;
+}
+#site-search input {
+  position: absolute;
+  top: 8px;
+  right: 56px;
+  font-size: 19px;
+  padding: 1px 0;
+  background: none;
+  border: none;
+  border-bottom: solid 3px #172a3e;
+  width: 120px;
+  color: #172a3e;
+  outline: none;
+}
+#as-user {
+  right: 0;
+  bottom: 1px;
+  background: #f57c2d;
+  width: 56px;
+  height: 42px;
+  display: block;
+  overflow: hidden;
+  border-radius: 4px;
+  transition: width 0.1s;
+}
+#as-user span {
+  position: absolute;
+  right: 91px;
+  bottom: 7px;
+  text-transform: uppercase;
+  font-size: 23px;
+  width: 90px;
+}
+#as-user i {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+#site-search:hover,
+#site-search.active,
+#as-user:hover {
+  width: 191px;
+  transition: width 0.25s;
+}
 #main-menu {
     text-align: center;
 }
@@ -345,6 +418,28 @@ i.active {
 
 /* Begin Responsive */
 
+@media screen and (max-width: 959px) {
+  #header-as {
+    opacity: 0.079;
+    height: 151px;
+    position: absolute;
+    top: -42px;
+    left: 19px;
+  }
+  #site-title {
+    padding: 13px 0 2px;
+    height: 69px;
+  }
+  #the-bar {
+    position: relative;
+    z-index: 100;
+  }
+  #site-search,
+  #as-user {
+    right: -17px;
+  }
+}
+
 @media screen and (max-width: 799px) {
   #breadcrumb #bar-unit {
     display: none;
@@ -353,7 +448,7 @@ i.active {
     display: inline-block;
   }
   #bar-unit-wo-college img {
-    height: 31px
+    height: 31px;
   }
 }
 

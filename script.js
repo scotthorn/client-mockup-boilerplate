@@ -1,5 +1,6 @@
 $(document).ready(function(){
 	var body = $("body");
+	var desktopWidth = 1024;
 
 	$('#main-version').change(function(){
 		var select = $(this),
@@ -21,7 +22,7 @@ $(document).ready(function(){
 			window.scrollTo(0,0);
 			body.addClass('bar-menu-open');
 			// On desktops, auto-focus on the search box.
-			if (window.innerWidth >= 960) {
+			if (window.innerWidth >= desktopWidth) {
 				setTimeout(function(){
 					// Delayed to avoid an odd bug where the search box jumps.
 					$('#bar-menu-search input').focus();
@@ -34,4 +35,28 @@ $(document).ready(function(){
 	$('#menu-backwash').click(function(){
 		body.removeClass('bar-menu-open');
 	});
+
+	$('#site-search').hover(function(){
+		if (window.innerWidth >= desktopWidth) {
+			$('#site-search input').focus();
+		}
+	});
+
+	$('#site-search input').focus(function(){
+		$('#site-search').addClass('active');
+	}).blur(function(){
+		$('#site-search').removeClass('active');
+	});
+
+	$('#site-search button').click(function(e){
+		if ($('#site-search input').val() == '') {
+			e.preventDefault();
+			$('#site-search input').focus();
+			return false;
+		}
+	});
 });
+
+
+
+
