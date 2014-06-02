@@ -196,7 +196,7 @@ body.bar-menu-open #bar-menu nav {
 }
 #menu-backwash {
   background: rgba(0, 5, 10, 0.8);
-  position: absolute;
+  position: fixed;
   top: 49px;
   bottom: 0;
   left: 9999px;
@@ -433,6 +433,9 @@ i.active {
   #site-search,
   #as-user {
     right: -17px;
+  }
+  #the-bar {
+    position: relative;
   }
 }
 
