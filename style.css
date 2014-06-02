@@ -436,6 +436,7 @@ i.active {
   }
   #the-bar {
     position: relative;
+    z-index: 10;
   }
 }
 
