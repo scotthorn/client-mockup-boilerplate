@@ -154,6 +154,7 @@ img {
 }
 body.bar-menu-open {
   overflow: hidden;
+  height: 100%;
 }
 body.bar-menu-open #bar-menu .menu-toggle {
   background: #005daa;
