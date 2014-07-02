@@ -17,9 +17,9 @@
       <div class="content-wrapper">
         <ul id="breadcrumb">
           <li id="bar-uk"><a href="http://www.uky.edu"><img src="images/uk-wordmark.png" alt="University of Kentucky" title="University of Kentucky"></a></li>
-          <li id="bar-uk-memorial" class="responsive-element"><a href="http://www.uky.edu"><img src="images/uk-memorial.png" alt="University of Kentucky" title="University of Kentucky"></a></li>
-          <li id="bar-unit"><a href="//www.as.uky.edu"><img src="images/as-official.png" alt="College of Arts &amp; Sciences" title="College of Arts &amp; Sciences"></a></li>
-          <li id="bar-unit-wo-college" class="responsive-element"><a href="//www.as.uky.edu"><img src="images/as-wo-college.png" alt="College of Arts &amp; Sciences" title="College of Arts &amp; Sciences"></a></li>
+          <li id="bar-uk-memorial" class="responsive-element "><a href="http://www.uky.edu"><img src="images/uk-memorial.png" alt="University of Kentucky" title="University of Kentucky"></a></li>
+          <li id="bar-unit" class=""><a href="//www.as.uky.edu"><img src="images/as-official.png" alt="College of Arts &amp; Sciences" title="College of Arts &amp; Sciences"></a></li>
+          <li id="bar-unit-wo-college" class="responsive-element "><a href="//www.as.uky.edu"><img src="images/as-wo-college.png" alt="College of Arts &amp; Sciences" title="College of Arts &amp; Sciences"></a></li>
         </ul>
         </ul>
         <div id="bar-search" class="version-1">
@@ -49,20 +49,21 @@
 
     <header id="header" class="clearfix">
       <div class="background"></div>
-      <div class="wide-wrapper">
-        <img src="images/ampersand.png" alt="A&amp;S" id="header-as">
-        <img src="images/mcl-name.png" alt="Modern &amp; Classical Languages, Literatures &amp; Cultures" id="site-title">
-
-        <div class="content-wrapper">
-          <div id="site-controls">
-            <form action="" id="site-search">
-              <div class="input-wrapper">
-                <input type="text" placeholder="Search MCL">
-              </div>
-              <button><i class="fa fa-search"></i></button>
-            </form>
-            <button id="as-user"><span>Log In</span><i class="fa fa-user"></i></button>
-          </div>
+      <div class="content-wrapper">
+        <img src="images/ampersand.png" alt="A&amp;S" id="header-as" class="page-mcl page-app">
+        <img src="images/mcl-name.png" alt="Modern &amp; Classical Languages, Literatures &amp; Cultures" id="site-title" class="page-mcl">
+        <img src="images/app-name.png" alt="Appalachian Center &amp; Appalachian Studies Program" id="site-title" class="page-app">
+        <img src="images/as-secondary.png" alt="College of Arts &amp; Sciences" id="as-full-logo" class="page-as">
+        <div id="site-controls">
+          <form action="" id="site-search">
+            <div class="input-wrapper">
+              <input type="text" placeholder="Search MCL" class="page-mcl">
+              <input type="text" placeholder="Search A&amp;S" class="page-as">
+              <input type="text" placeholder="App Center" class="page-app">
+            </div>
+            <button><i class="fa fa-search"></i></button>
+          </form>
+          <button id="as-user"><span>Log In</span><i class="fa fa-user"></i></button>
         </div>
       </div>
     </header>
@@ -77,10 +78,10 @@
             <li><a href="">Outreach <i class="fa fa-angle-down"></i></a></li>
             <li><a href="">Alumni &amp; Friends <i class="fa fa-angle-down"></i></a></li>
           </ul>
-          <div id="feature-banner">
+          <div id="feature-banner" class="page-as page-mcl">
             <img src="images/feature-banner.png" alt="">
           </div>
-          <ul id="media-nav">
+          <ul id="media-nav" class="page-as page-mcl">
             <li class="pager">
               <i class="fa fa-circle active"></i>
               <i class="fa fa-circle"></i>
@@ -94,6 +95,10 @@
             <li><a href="">Blogs</a></li>
             <li><a href="">Podcasts</a></li>
           </ul>
+          <div class="content-wrapper">
+            <img src="images/app-content.png" class="page-app">
+          </div>
+          
           <div class="padded-content">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
           </div>
@@ -105,6 +110,18 @@
     </footer>
 
     <footer id="demo-controls">
+      <label for="page">Page</label>
+      <select name="page" id="page-toggle">
+        <option selected value="mcl">MCL</option>
+        <option value="as">A&amp;S Home</option>
+        <option value="app">Appalachian</option>
+      </select>
+      <label for="bar">Bar Color</label>
+      <select name="bar" id="bar-toggle">
+        <option selected value="black">Black</option>
+        <option value="uk">UK Blue</option>
+        <option value="dark">Dark Blue</option>
+      </select>
       <label for="version">Global Nav Corner</label>
       <select name="version" id="main-version">
         <option value="1">Search Box</option>

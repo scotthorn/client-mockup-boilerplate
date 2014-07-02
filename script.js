@@ -13,6 +13,28 @@ $(document).ready(function(){
 			body.addClass('version-' + val);
 		}, 100);
 	}).change();
+	$('#page-toggle').change(function(){
+		var select = $(this),
+			val = select.val();
+			
+		body.removeClass(function(index, css) {
+		    return (css.match(/\bpage-\S+/g) || []).join(' ');
+		})
+		setTimeout(function(){
+			body.addClass('page-' + val);
+		}, 100);
+	}).change();
+	$('#bar-toggle').change(function(){
+		var select = $(this),
+			val = select.val();
+			
+		body.removeClass(function(index, css) {
+		    return (css.match(/\bbar-\S+/g) || []).join(' ');
+		})
+		setTimeout(function(){
+			body.addClass('bar-' + val);
+		}, 100);
+	}).change();
 
 	$('#bar-menu .menu-toggle').click(function(){
 		if (body.hasClass('bar-menu-open')) {
