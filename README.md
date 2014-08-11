@@ -1,4 +1,4 @@
-ukas-pr-mockup
+client-mockup-boilerplate
 ==============
 
-Sample web layouts for UK A&amp;S based on ongoing PR standards discussions.
+Boilerplate HTML5, responsive css media queries, js framework and interface for live option switching.
