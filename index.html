@@ -3,59 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-  <title>Client Name</title>
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+  <title>evan winters</title>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:500,200' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="style.css">
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="script.js"></script>
 </head>
 <body>
-  <div id="page">
-    <header id="the-bar" class="clearfix">
-      <div class="content-wrapper">
-        <div id="bar-search">
-          <input type="text" placeholder="search">
-          <button type="button"><i class="fa fa-search"></i></button>
-        </div>
-        <button id="bar-search-responsive-toggle" class="responsive-element version-1" type="button"><i class="fa fa-search"></i></button>
+  <header id="header" class="clearfix table">
+    <div class="content-wrapper table-row">
+      <div class="middle table-cell">
+        <h1><a href="/">Evan Winters</a></h1>
+        <nav id="main-nav">
+          <ul class="menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="#books">Books &amp; Things</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#buy">Where to Buy</a></li>
+          </ul>
+        </nav>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <header id="header" class="clearfix">
-      <div class="content-wrapper">
-      </div>
-    </header>
+  <section class="panel" id="about">
+    <h2>About</h2>
+    <p>Evan Winters ain't your median rodeo clown. He's a poot-tootin' cowboy that can charm old and young alike with his roudy adventures. Come join him on a magical quest to rescue his neice's microwave from the clutches of the most evil Lord Abugabu.</p>
+  </section>
 
-    <section id="main-wrapper">
-      <div class="content-wrapper">
-        <div id="main">     
-        </div>
-      </div>
-    </section>
-    <footer id="footer">
-    </footer>
+  <section class="panel" id="books">
+    <h2>Books &amp; Things</h2>
+    <ul>
+      <li>
+        <img src="images/cover1.jpg" alt="Cover of fears">
+        <h3>Lovers of the Taco -- Trilogy</h3>
+        <p>Seasoned beef or carnitas? Join Aldous Marbory on a dystopic odessey in discovering the source of his taco obsession. They taste alright, I guess.</p>
+      </li>
+      <li>
+        <img src="images/cover2.jpg" alt="Cover of liars">
+        <h3>I Lost Three Screws Up My Butt</h3>
+        <p>This epic retelling of the Giambattista classic puts the protagonist in rural Kentucky. Said by Publisher's Weekly to be "A new window into a wider world of academically crass literature, both repulsing the reader while beconing them for more.</p>
+      </li>
+      <li>
+        <img src="images/cover3.jpg" alt="Cover of liars">
+        <h3>Sex Sells</h3>
+        <p>Science happened to my words. Join me in reading about sexy times people in my head have, and I'm sure you'll get at least moderately unharmed. The last two thirds of the book are just the word Sex repeated in various fonts and sizes.</p>
+      </li>
+    </ul>
+  </section>
 
-    <footer id="demo-controls">
-      <label for="page">Page</label>
-      <select name="page" id="page-toggle">
-        <option selected value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
+  <section class="panel" id="contact">
+    <h2>Contact</h2>
+    <form>
+      <h3>Hey Evan,</h3>
+      <textarea name="message" id="message" rows="7" placeholder="message"></textarea>
+      <select name="ending" id="ending">
+        <option value="sincerely">Sincerely,</option>
+        <option value="yours-truly">Yours Truly,</option>
+        <option value="fuck-off">Fuck Off,</option>
+        <option value="you-suck">You Suck,</option>
+        <option value="call-me">Call Me!</option>
       </select>
-      <label for="alpha">Option Alpha</label>
-      <select name="alpha" id="alpha-toggle">
-        <option selected value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-      </select>
-      <label for="beta">Option Beta</label>
-      <select name="beta" id="beta-toggle">
-        <option value="1">1</option>
-        <option selected value="2">2</option>
-        <option value="3">3</option>
-      </select>
-    </footer>
-  </div>
+      <input type="text" id="name" placeholder="name">
+      <input type="email" id="email" placeholder="email">
+      <input type="submit">
+    </form>
+  </section>
+
+  <section class="panel" id="buy">
+    <h2>Where to Buy</h2>
+  </section>
+
+  <footer id="footer">
+  </footer>
+
 </body>
 </html>
