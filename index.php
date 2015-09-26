@@ -17,52 +17,41 @@
         <h1><a href="/">Evan Winters</a></h1>
         <nav id="main-nav">
           <ul class="menu">
+            <li><a href="#books">The Witching Hour</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="#books">Books &amp; Things</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="#buy">Where to Buy</a></li>
           </ul>
         </nav>
       </div>
     </div>
   </header>
 
+  <section class="panel" id="books">
+    <h2>The Witching Hour</h2>
+    <ul>
+      <li>
+        <img src="witch.jpg" alt="The Witch of Bracken's Hollow">
+        <h3>The Witch of Bracken's Hollow</h3>
+        <h4>Coming October 9th, 2015</h4>
+        <p>Seasoned beef or carnitas? Join Aldous Marbory on a dystopic odessey in discovering the source of his taco obsession. They taste alright, I guess.</p>
+      </li>
+    </ul>
+  </section>
+
   <section class="panel" id="about">
     <h2>About</h2>
     <p>Evan Winters ain't your median rodeo clown. He's a poot-tootin' cowboy that can charm old and young alike with his roudy adventures. Come join him on a magical quest to rescue his neice's microwave from the clutches of the most evil Lord Abugabu.</p>
   </section>
 
-  <section class="panel" id="books">
-    <h2>Books &amp; Things</h2>
-    <ul>
-      <li>
-        <img src="images/cover1.jpg" alt="Cover of fears">
-        <h3>Lovers of the Taco -- Trilogy</h3>
-        <p>Seasoned beef or carnitas? Join Aldous Marbory on a dystopic odessey in discovering the source of his taco obsession. They taste alright, I guess.</p>
-      </li>
-      <li>
-        <img src="images/cover2.jpg" alt="Cover of liars">
-        <h3>I Lost Three Screws Up My Butt</h3>
-        <p>This epic retelling of the Giambattista classic puts the protagonist in rural Kentucky. Said by Publisher's Weekly to be "A new window into a wider world of academically crass literature, both repulsing the reader while beconing them for more.</p>
-      </li>
-      <li>
-        <img src="images/cover3.jpg" alt="Cover of liars">
-        <h3>Sex Sells</h3>
-        <p>Science happened to my words. Join me in reading about sexy times people in my head have, and I'm sure you'll get at least moderately unharmed. The last two thirds of the book are just the word Sex repeated in various fonts and sizes.</p>
-      </li>
-    </ul>
-  </section>
-
   <section class="panel" id="contact">
     <h2>Contact</h2>
     <form>
-      <h3>Hey Evan,</h3>
+      <h3>Dear Evan,</h3>
       <textarea name="message" id="message" rows="7" placeholder="message"></textarea>
       <select name="ending" id="ending">
         <option value="sincerely">Sincerely,</option>
         <option value="yours-truly">Yours Truly,</option>
-        <option value="fuck-off">Fuck Off,</option>
+        <option value="fuck-off">Cower at my Feet,</option>
         <option value="you-suck">You Suck,</option>
         <option value="call-me">Call Me!</option>
       </select>
@@ -72,11 +61,8 @@
     </form>
   </section>
 
-  <section class="panel" id="buy">
-    <h2>Where to Buy</h2>
-  </section>
-
   <footer id="footer">
+    &copy; <?php print date('Y');?> Evan Winters, all rights reserved.
   </footer>
 
 </body>

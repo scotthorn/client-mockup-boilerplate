@@ -52,7 +52,10 @@ img {
 }
 
 /* EW Style */
-html,body {
+html {
+  height: 100%;
+}
+body {
   height: 100%;
 }
 #page {
@@ -60,8 +63,8 @@ html,body {
 }
 #header:before {
   content: '';
-  box-shadow: inset 0 0 42px 1px rgba(0,0,0,0.4);
-  position: fixed;
+  box-shadow: inset 0 0 242px -21px rgba(0,0,0,0.4);
+  position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
@@ -72,6 +75,7 @@ html,body {
   width: 100%;
   min-height: 100%;
   text-transform: lowercase;
+  position:relative;
 }
 #header h1 a {
   font-size: 5.9em;
@@ -80,7 +84,7 @@ html,body {
   display: block;
   text-decoration: none;
   line-height: 0.89;
-  color: #eaeaea;
+  color: #e0e0e0;
   padding: 0 10%;
   margin-bottom: 21px;
   text-shadow:  1px 1px 9px rgba(0,0,0,0.08);
@@ -122,8 +126,6 @@ html,body {
 }
 #about {
   background: #bbb;
-  margin-top: 84px;
-  box-shadow: 0 0 5px 1px rgba(0,0,0,0.314);
   position: relative;
 }
 #about p {
@@ -140,16 +142,22 @@ html,body {
   clear: left;
 }
 #books img {
-  height: 200px;
-  width: 150px;
+  height: auto;
+  width: 300px;
   float: left;
-  margin: 0 13px 21px 0;
+  margin: 0 21px 21px 0;
   background: hsl(1, 70%, 42%);
 }
 #books h3 {
-  padding: 0.3em 0 0.81em;
-  font-size: 1.42em;
+  padding: 0.3em 0 0.31em;
+  font-size: 1.72em;
   font-weight: 300;
+}
+#books h4 {
+  font-weight: 300;
+  margin: 0.3em 0 0.7em;
+  font-size: 1.2em;
+  color: #777;
 }
 #books p {
   line-height: 1.5;
@@ -158,7 +166,7 @@ html,body {
 }
 
 #contact {
-  background: hsl(1, 70%, 42%);
+  background: hsl(1, 70%, 21%);
   color: #bbb;
 }
 #contact form {
@@ -211,6 +219,13 @@ html,body {
 
 #buy {
   min-height: 100%;
+}
+
+#footer {
+  background: #292929;
+  color: white;
+  padding: 42px 0;
+  text-align: center;
 }
 
 /* Begin Responsive */
