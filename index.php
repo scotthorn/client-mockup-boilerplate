@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
   <title>evan winters</title>
-  <link href='http://fonts.googleapis.com/css?family=Raleway:500,200' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Oswald:300|Raleway:200,500' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="style.css">
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -14,10 +14,10 @@
   <header id="header" class="clearfix table">
     <div class="content-wrapper table-row">
       <div class="middle table-cell">
-        <h1><a href="/">Evan Winters</a></h1>
+        <h1><a href="/"><span>Evan</span> <span>Winters</span></a></h1>
         <nav id="main-nav">
           <ul class="menu">
-            <li><a href="#books">The Witching Hour</a></li>
+            <li><a href="#writing">Writing</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -26,8 +26,8 @@
     </div>
   </header>
 
-  <section class="panel" id="books">
-    <h2>The Witching Hour</h2>
+  <section class="panel" id="writing">
+    <h2>Writing</h2>
     <ul>
       <li>
         <img src="witch.jpg" alt="The Witch of Bracken's Hollow">
