@@ -115,6 +115,17 @@ body {
 #main-nav a:hover {
   
 }
+#main-nav .social-media a {
+  opacity: 0.5;
+  font-size: 2.3em;
+  margin: -0.3em 5px 0;
+  display: inline-block;
+  transition: opacity 0.2s;
+}
+#main-nav .social-media a:hover {
+  opacity: 1;
+  transition: opacity 0.2s;
+}
 
 .panel {
   min-height: 100vh;
@@ -140,7 +151,7 @@ body {
 #writing {
   background: #f3f3f3;
 }
-#writing li {
+#writing > ul > li {
   list-style: none;
   clear: left;
 }
@@ -166,6 +177,26 @@ body {
   line-height: 1.5;
   font-weight: 300;
   color: #555;
+}
+.buy-links {
+  list-style: none;
+}
+.buy-links li {
+  display: inline-block;
+}
+.buy-links li a {
+  background: #666;
+  color: white;
+  display: inline-block;
+  padding: 11px 19px;
+  margin: 19px 9px 0 0;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.buy-links li a:hover {
+  background: #aaa;
+  transition: background 0.2s;
 }
 
 #contact {

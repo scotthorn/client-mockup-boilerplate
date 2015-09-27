@@ -5,10 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
   <title>evan winters</title>
   <link href='https://fonts.googleapis.com/css?family=Oswald:300|Raleway:200,500' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
-
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="script.js"></script>
 </head>
 <body>
   <header id="header" class="clearfix table">
@@ -20,6 +18,10 @@
             <li><a href="#writing">Writing</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li class="social-media">
+              <a href="https://www.facebook.com/AuthorEvanWinters?fref=ts"><i class="fa fa-facebook-square"></i></a>
+              <a href="https://twitter.com/evanwintersauth"><i class="fa fa-twitter-square"></i></a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -34,6 +36,12 @@
         <h3>The Witch of Bracken's Hollow</h3>
         <h4>Coming October 9th, 2015</h4>
         <p>Seasoned beef or carnitas? Join Aldous Marbory on a dystopic odessey in discovering the source of his taco obsession. They taste alright, I guess.</p>
+        <p>
+          <ul class="buy-links">
+            <li><a href=""><i class="fa fa-amazon"></i> Buy on Amazon</a></li>
+            <li><a href="">Buy on Borders</a></li>
+          </ul>
+        </p>
       </li>
     </ul>
   </section>
@@ -65,5 +73,9 @@
     &copy; <?php print date('Y');?> Evan Winters, all rights reserved.
   </footer>
 
+  <div class="scripts">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </div>
 </body>
 </html>
