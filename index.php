@@ -15,7 +15,12 @@
         <h1><a href="/"><span>Evan</span> <span>Winters</span></a></h1>
         <nav id="main-nav">
           <ul class="menu">
-            <li><a href="#writing">Writing</a></li>
+            <li>
+              <a href="#writing">The Witch of Bracken's Hollow</a>
+              <ul class="buy-links">
+                <li><a href=""><i class="fa fa-amazon"></i> Available on Amazon</a></li>
+              </ul>
+            </li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
             <li class="social-media">
@@ -39,7 +44,6 @@
         <p>
           <ul class="buy-links">
             <li><a href=""><i class="fa fa-amazon"></i> Buy on Amazon</a></li>
-            <li><a href="">Buy on Borders</a></li>
           </ul>
         </p>
       </li>
