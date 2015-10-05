@@ -91,6 +91,8 @@ body {
   text-transform: uppercase;
   font-family: "Oswald";
   letter-spacing: 0.07em;
+  position: relative;
+  z-index: 10;
 }
 #header h1:after {
   content: '';
@@ -102,6 +104,9 @@ body {
   margin-bottom: 19px;
   box-shadow: 0 0 9px 0px rgba(0,0,0,0.08);
   pointer-events:none;
+}
+body.contact #header h1 a {
+  margin-bottom: 0;
 }
 body.contact #header h1:after {
   display: none;
@@ -287,7 +292,7 @@ body.contact #header h1:after {
 .message-success {
   color: #333;
   font-size: 1.1em;
-  line-height: 1.7;
+  line-height: 2.4;
   margin-bottom: 2em;
 }
 .success .message-failure,
