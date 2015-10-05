@@ -103,6 +103,9 @@ body {
   box-shadow: 0 0 9px 0px rgba(0,0,0,0.08);
   pointer-events:none;
 }
+body.contact #header h1:after {
+  display: none;
+}
 #main-nav a {
   font-size: 1.4em;
   text-transform: lowercase;
@@ -278,6 +281,16 @@ body {
   color: white;
   padding: 42px 0;
   text-align: center;
+}
+
+.message-failure,
+.message-success {
+  color: #333;
+  font-size: 1.1em;
+}
+.success .message-failure,
+.failure .message-success {
+  display: none;
 }
 
 /* Begin Responsive */
