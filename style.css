@@ -287,6 +287,8 @@ body.contact #header h1:after {
 .message-success {
   color: #333;
   font-size: 1.1em;
+  line-height: 1.7;
+  margin-bottom: 2em;
 }
 .success .message-failure,
 .failure .message-success {
