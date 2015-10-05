@@ -58,7 +58,7 @@
 
   <section class="panel" id="contact">
     <h2>Contact</h2>
-    <form action="contact" method="POST">
+    <form action="contact" method="post">
       <h3>Dear Evan,</h3>
       <textarea name="message" id="message" rows="7" placeholder="message" required="required"></textarea>
       <select name="ending" id="ending">
