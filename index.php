@@ -56,9 +56,9 @@
     <p>Evan Winters ain't your median rodeo clown. He's a poot-tootin' cowboy that can charm old and young alike with his roudy adventures. Come join him on a magical quest to rescue his neice's microwave from the clutches of the most evil Lord Abugabu.</p>
   </section>
 
-  <section class="panel" id="contact/index.php">
+  <section class="panel" id="contact">
     <h2>Contact</h2>
-    <form action="contact" method="post">
+    <form action="contact/index.php" method="post">
       <h3>Dear Evan,</h3>
       <textarea name="message" id="message" rows="7" placeholder="message" required="required"></textarea>
       <select name="ending" id="ending">
