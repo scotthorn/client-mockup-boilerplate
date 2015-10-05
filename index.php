@@ -68,9 +68,9 @@
         <option value="you-suck">You Suck,</option>
         <option value="call-me">Call Me!</option>
       </select>
-      <input type="text" id="name" placeholder="name" required="required">
-      <input type="email" id="email" placeholder="email" required="required">
-      <input type="submit">
+      <input type="text" name="name" id="name" placeholder="name" required="required">
+      <input type="email" name="email" id="email" placeholder="email" required="required">
+      <input type="submit" name="submit">
     </form>
   </section>
 
