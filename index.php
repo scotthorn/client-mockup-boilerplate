@@ -35,6 +35,7 @@
   </header>
 
   <section class="panel" id="writing">
+    <a href="#header" class="top-link" title="back to top"><i class="fa fa-chevron-up"></i></a>
     <h2>Writing</h2>
     <ul>
       <li>
@@ -52,11 +53,13 @@
   </section>
 
   <section class="panel" id="about">
+    <a href="#header" class="top-link" title="back to top"><i class="fa fa-chevron-up"></i></a>
     <h2>About</h2>
     <p>Evan Winters ain't your median rodeo clown. He's a poot-tootin' cowboy that can charm old and young alike with his roudy adventures. Come join him on a magical quest to rescue his neice's microwave from the clutches of the most evil Lord Abugabu.</p>
   </section>
 
   <section class="panel" id="contact">
+    <a href="#header" class="top-link" title="back to top"><i class="fa fa-chevron-up"></i></a>
     <h2>Contact</h2>
     <form action="contact/index.php" method="post">
       <h3>Dear Evan,</h3>
