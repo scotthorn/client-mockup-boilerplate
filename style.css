@@ -292,8 +292,14 @@ body.contact #header h1:after {
 .message-success {
   color: #333;
   font-size: 1.1em;
-  line-height: 2.4;
+  line-height: 1.3;
   margin-bottom: 2em;
+  position: relative;
+  z-index: 10;
+}
+.message-success a {
+  display: block;
+  margin-top: 2em;
 }
 .success .message-failure,
 .failure .message-success {
