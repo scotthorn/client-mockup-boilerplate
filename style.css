@@ -115,13 +115,23 @@ body {
 #main-nav a:hover {
   
 }
-#main-nav .buy-links a {
+#header .buy-links a {
   margin-top: 0;
   margin-bottom: 19px;
-  color: white;
   background: #ccc;
   font-size: 15px;
-  padding: 3px 11px;
+  padding: 9px 17px;
+  color: #777;
+  position: relative;
+  z-index: 10;
+}
+#header .buy-links a h2 {
+  font-size: 23px;
+  color: white;
+  margin-bottom: 5px;
+}
+#header .buy-links a:hover {
+  background: #bbb;
 }
 #main-nav .social-media a {
   opacity: 0.5;
@@ -129,9 +139,6 @@ body {
   margin: -0.3em 5px 0;
   display: inline-block;
   transition: opacity 0.2s;
-}
-#main-nav .buy-links a:hover {
-  background: #bbb;
 }
 #main-nav .social-media a:hover {
   opacity: 1;

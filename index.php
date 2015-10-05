@@ -12,15 +12,16 @@
   <header id="header" class="clearfix table">
     <div class="content-wrapper table-row">
       <div class="middle table-cell">
-        <h1><a href="/"><span>Evan</span> <span>Winters</span></a></h1>
+        <h1><a href="/"><span>Evan</span> <span>Winters</span></a></h1>  
+        <ul class="buy-links">
+          <li><a href="">
+            <h2>The Witch of Bracken's Hollow</h2>
+            <i class="fa fa-amazon"></i> Available on Amazon
+          </a></li>
+        </ul>
         <nav id="main-nav">
           <ul class="menu">
-            <li>
-              <a href="#writing">The Witch of Bracken's Hollow</a>
-              <ul class="buy-links">
-                <li><a href=""><i class="fa fa-amazon"></i> Available on Amazon</a></li>
-              </ul>
-            </li>
+            <li><a href="#writing">Writing</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
             <li class="social-media">
@@ -57,9 +58,9 @@
 
   <section class="panel" id="contact">
     <h2>Contact</h2>
-    <form>
+    <form action="contact" method="POST">
       <h3>Dear Evan,</h3>
-      <textarea name="message" id="message" rows="7" placeholder="message"></textarea>
+      <textarea name="message" id="message" rows="7" placeholder="message" required="required"></textarea>
       <select name="ending" id="ending">
         <option value="sincerely">Sincerely,</option>
         <option value="yours-truly">Yours Truly,</option>
@@ -67,8 +68,8 @@
         <option value="you-suck">You Suck,</option>
         <option value="call-me">Call Me!</option>
       </select>
-      <input type="text" id="name" placeholder="name">
-      <input type="email" id="email" placeholder="email">
+      <input type="text" id="name" placeholder="name" required="required">
+      <input type="email" id="email" placeholder="email" required="required">
       <input type="submit">
     </form>
   </section>
