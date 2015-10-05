@@ -62,11 +62,11 @@
       <h3>Dear Evan,</h3>
       <textarea name="message" id="message" rows="7" placeholder="message" required="required"></textarea>
       <select name="ending" id="ending">
-        <option value="sincerely">Sincerely,</option>
-        <option value="yours-truly">Yours Truly,</option>
-        <option value="fuck-off">Cower at my Feet,</option>
-        <option value="you-suck">You Suck,</option>
-        <option value="call-me">Call Me!</option>
+        <option value="Sincerely">Sincerely,</option>
+        <option value="Yours Truly">Yours Truly,</option>
+        <option value="Cower at my Feet">Cower at my Feet,</option>
+        <option value="You Suck">You Suck,</option>
+        <option value="Call Me!">Call Me!</option>
       </select>
       <input type="text" name="name" id="name" placeholder="name" required="required">
       <input type="email" name="email" id="email" placeholder="email" required="required">
