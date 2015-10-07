@@ -23,6 +23,7 @@
           <ul class="menu">
             <li><a href="#writing">Writing</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#mailing-list">Mailing List</a></li>
             <li><a href="#contact">Contact</a></li>
             <li class="social-media">
               <a href="https://www.facebook.com/AuthorEvanWinters?fref=ts"><i class="fa fa-facebook-square"></i></a>
@@ -60,6 +61,37 @@
       <a href="#header" class="top-link" title="back to top"><i class="fa fa-chevron-up"></i></a>
       <h2>About</h2>
       <p>Evan Winters lives in Kentucky with his wife and dogs.  He is a lifelong fan of horror and speculative fiction, be it in the form of comic books, film, short fiction or novels. <em>The Witch of Bracken's Hollow</em> is the first fiction he has published in the 21st Century. He hopes it won't be the last.</p>
+  </section>
+
+  <section class="panel" id="mailing-list">
+    <div class="content-wrapper">
+      <a href="#header" class="top-link" title="back to top"><i class="fa fa-chevron-up"></i></a>
+      <h2>Mailing List</h2>
+      <p>If you would like to know when new books are published, sign up for email alerts here.</p>
+      
+      <!-- Begin MailChimp Signup Form -->
+      <div id="mc_embed_signup">
+      <form action="//evanwinters.us11.list-manage.com/subscribe/post?u=a7529490683f9c5c822dc89d6&amp;id=d8b66731b8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div id="mc_embed_signup_scroll">
+        
+      <div class="mc-field-group">
+        <label for="mce-EMAIL">Email Address </label>
+        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+      </div>
+        <div id="mce-responses" class="clear">
+          <div class="response" id="mce-error-response" style="display:none"></div>
+          <div class="response" id="mce-success-response" style="display:none"></div>
+        </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;"><input type="text" name="b_a7529490683f9c5c822dc89d6_d8b66731b8" tabindex="-1" value=""></div>
+          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+          </div>
+      </form>
+      </div>
+
+      <!--End mc_embed_signup-->
+
+      <p>*I will not share your email with anyone, and you can unsubscribe at any time.</p>
+    </div>
   </section>
 
   <section class="panel" id="contact">

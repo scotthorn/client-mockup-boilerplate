@@ -226,6 +226,41 @@ body.contact #header h1:after {
   transition: background 0.2s;
 }
 
+#mailing-list {
+  background: #ddd;
+}
+#mailing-list p {
+  max-width: 420px;
+  margin: 1em auto 1em;
+  font-size: 1.2em;
+  line-height: 1.4;
+}
+#mailing-list p {
+
+}
+#mc_embed_signup {
+  text-align: center;
+  text-transform: lowercase;
+}
+#mc_embed_signup input[type="email"] {
+  font-size: 19px;
+  background: #f8f8f8;
+  box-shadow: inset 0 0 9px 1px rgba(0,0,0,0.4);
+  padding: 5px 11px;
+  border: none;
+  border-radius: 3px;
+  width: 190px;
+  display: inline-block;
+  margin-bottom: 4px
+}
+#mc_embed_signup input[type="submit"] {
+  font-size: 2em;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 9px;
+  
+}
+
 #contact {
   background: hsl(1, 70%, 21%);
   color: #bbb;
