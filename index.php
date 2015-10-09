@@ -13,12 +13,12 @@
     <div class="content-wrapper table-row">
       <div class="middle table-cell">
         <h1><a href="/"><span>Evan</span> <span>Winters</span></a></h1>  
-        <!--ul class="buy-links">
-          <li><a href="">
+        <ul class="buy-links">
+          <li><a href="http://amzn.to/1WQoMzc">
             <h2>The Witch of Bracken's Hollow</h2>
             <i class="fa fa-amazon"></i> Available on Amazon
           </a></li>
-        </ul-->
+        </ul>
         <nav id="main-nav">
           <ul class="menu">
             <li><a href="#writing">Writing</a></li>
@@ -41,16 +41,15 @@
       <h2>Writing</h2>
       <ul>
         <li>
-          <img src="witch.jpg" alt="The Witch of Bracken's Hollow">
+          <a href="http://amzn.to/1WQpnAT" title="View this book on Amazon.com"><img src="witch.jpg" alt="The Witch of Bracken's Hollow"></a>
           <h3>The Witch of Bracken's Hollow</h3>
-          <h4>Coming October 9th, 2015</h4>
+          <p>
+            <ul class="buy-links">
+              <li><a href="http://amzn.to/1WQoMzc"><i class="fa fa-amazon"></i> Available on Amazon</a></li>
+            </ul>
+          </p>
           <p>Damon knows that the Witch of Bracken's Hollow is just a myth. He knew it when he was a child and his friend Rachel drowned in Deep Run Lake and became another victim of the legendary witch. And he knows it now that he is a youth pastor in charge of a camp full of teenagers meeting at the same lodge where Rachel drowned all those years ago.</p>
           <p>But as memories of Rachel's death play on Damon's mind, he finds the boundaries between reality and fantasy blurring before his eyes.  When a voice whispers Damon’s name at the witching hour, he must sort out history from myth, fact from fiction, and he must do so before the children he is charged to care for suffer the same fate as Rachel.</p>
-          <!--p>
-            <ul class="buy-links">
-              <li><a href=""><i class="fa fa-amazon"></i> Buy on Amazon</a></li>
-            </ul>
-          </p-->
         </li>
       </ul>
     </div>
@@ -116,7 +115,8 @@
 
   <footer id="footer">
     <div class="content-wrapper">
-      &copy; <?php print date('Y');?> Evan Winters, all rights reserved.
+      <p>&copy; <?php print date('Y');?> Evan Winters, all rights reserved.</p>
+      <p><br/>This website may be compensated for sales of products on third party sites that we link to.</p>
     </div>
   </footer>
 

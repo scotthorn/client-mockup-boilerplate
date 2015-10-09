@@ -155,7 +155,7 @@ body.contact #header h1:after {
 
 .panel {
   min-height: 100vh;
-  padding: 42px 15%;
+  padding: 42px 9%;
   box-sizing: border-box;
 }
 .panel h2 {
@@ -177,7 +177,7 @@ body.contact #header h1:after {
 #writing {
   background: #f3f3f3;
 }
-#writing > ul > li {
+#writing > .content-wrapper > ul > li {
   list-style: none;
   clear: left;
 }
