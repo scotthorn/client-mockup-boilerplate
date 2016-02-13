@@ -14,8 +14,16 @@
       <div class="middle table-cell">
         <h1><a href="/"><span>Evan</span> <span>Winters</span></a></h1>  
         <ul class="buy-links">
+          <li><h2>The Witch of Bracken's Hollow</h2></li>
+          <li>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="GWHKWZNPL36XN">
+              <input type="submit" value="Order with PayPal">
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+          </li>
           <li><a href="http://amzn.to/1WQoMzc">
-            <h2>The Witch of Bracken's Hollow</h2>
             <i class="fa fa-amazon"></i> Available on Amazon
           </a></li>
         </ul>
@@ -41,10 +49,18 @@
       <h2>Writing</h2>
       <ul>
         <li>
-          <a href="http://amzn.to/1WQpnAT" title="View this book on Amazon.com"><img src="witch.jpg" alt="The Witch of Bracken's Hollow"></a>
+          <a href="http://amzn.to/1WQpnAT" title="View this book on Amazon.com"><img class="book-image" src="witch.jpg" alt="The Witch of Bracken's Hollow"></a>
           <h3>The Witch of Bracken's Hollow</h3>
           <p>
             <ul class="buy-links">
+              <li>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="hosted_button_id" value="GWHKWZNPL36XN">
+                  <input type="submit" value="Order with PayPal">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                </form>
+              </li>
               <li><a href="http://amzn.to/1WQoMzc"><i class="fa fa-amazon"></i> Available on Amazon</a></li>
             </ul>
           </p>

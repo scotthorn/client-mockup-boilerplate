@@ -123,20 +123,26 @@ body.contact #header h1:after {
 #main-nav a:hover {
   
 }
-#header .buy-links a {
-  margin-top: 0;
-  margin-bottom: 19px;
+#header .buy-links {
   background: #ccc;
-  font-size: 15px;
-  padding: 9px 17px;
-  color: #777;
+  display: inline-block;
+  padding: 19px 21px;
+  border-radius: 4px;
+}
+#header .buy-links h2 {
+  font-size: 23px;
+  color: white;
+  margin-bottom: 9px;
+  display: block;
+}
+#header .buy-links li:nth-child(1) {
+  display: block;
+}
+#header .buy-links li {
   position: relative;
   z-index: 10;
 }
 #header .buy-links a h2 {
-  font-size: 23px;
-  color: white;
-  margin-bottom: 5px;
 }
 #header .buy-links a:hover {
   background: #bbb;
@@ -181,7 +187,7 @@ body.contact #header h1:after {
   list-style: none;
   clear: left;
 }
-#writing img {
+#writing .book-image {
   height: auto;
   width: 300px;
   float: left;
@@ -211,7 +217,8 @@ body.contact #header h1:after {
 .buy-links li {
   display: inline-block;
 }
-.buy-links li a {
+.buy-links li a,
+.buy-links input[type="submit"] {
   background: #666;
   color: white;
   display: inline-block;
@@ -220,6 +227,10 @@ body.contact #header h1:after {
   border-radius: 4px;
   text-decoration: none;
   transition: background 0.2s;
+  border: 0;
+  font-size: 15px;
+  font-family: 'Raleway', Helvetica, Arial, Sans-serif;
+  line-height: 1;
 }
 .buy-links li a:hover {
   background: #aaa;
