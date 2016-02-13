@@ -147,6 +147,11 @@ body.contact #header h1:after {
 #header .buy-links a:hover {
   background: #bbb;
 }
+#header .buy-links .comment {
+  color: #666;
+  font-size: 14px;
+  margin-top: 4px;
+}
 #main-nav .social-media a {
   opacity: 0.5;
   font-size: 2.3em;
@@ -228,7 +233,7 @@ body.contact #header h1:after {
   text-decoration: none;
   transition: background 0.2s;
   border: 0;
-  font-size: 15px;
+  font-size: 17px;
   font-family: 'Raleway', Helvetica, Arial, Sans-serif;
   line-height: 1;
 }

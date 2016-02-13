@@ -22,10 +22,11 @@
               <input type="submit" value="Order with PayPal">
               <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
             </form>
+            <div class="comment">* Signed Paperback</div>
           </li>
           <li><a href="http://amzn.to/1WQoMzc">
             <i class="fa fa-amazon"></i> Available on Amazon
-          </a></li>
+          </a><div class="comment">* Digital/Paperback</div></li>
         </ul>
         <nav id="main-nav">
           <ul class="menu">
@@ -64,6 +65,7 @@
               <li><a href="http://amzn.to/1WQoMzc"><i class="fa fa-amazon"></i> Available on Amazon</a></li>
             </ul>
           </p>
+          <p><em>Order a signed copy direct from the author with Paypal.</em></p>
           <p>Damon knows that the Witch of Bracken's Hollow is just a myth. He knew it when he was a child and his friend Rachel drowned in Deep Run Lake and became another victim of the legendary witch. And he knows it now that he is a youth pastor in charge of a camp full of teenagers meeting at the same lodge where Rachel drowned all those years ago.</p>
           <p>But as memories of Rachel's death play on Damon's mind, he finds the boundaries between reality and fantasy blurring before his eyes.  When a voice whispers Damon’s name at the witching hour, he must sort out history from myth, fact from fiction, and he must do so before the children he is charged to care for suffer the same fate as Rachel.</p>
         </li>
