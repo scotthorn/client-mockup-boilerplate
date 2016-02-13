@@ -4,6 +4,7 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
 /* General Styles */
 body {
     font-family: 'Raleway', Helvetica, Arial, Sans-serif;
+    min-width: 960px;
 }
 .clearfix:after {
     content: ',';
@@ -59,7 +60,7 @@ body {
   height: 100%;
 }
 #page {
-  min-height
+  min-width: 960px;
 }
 #header:before {
   content: '';
