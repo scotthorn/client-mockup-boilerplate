@@ -2,60 +2,266 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-  <title>Client Name</title>
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Amelia Stamps Pottery</title>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700|Cinzel' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="style.css">
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="routie.min.js"></script>
   <script src="script.js"></script>
 </head>
 <body>
   <div id="page">
-    <header id="the-bar" class="clearfix">
-      <div class="content-wrapper">
-        <div id="bar-search">
-          <input type="text" placeholder="search">
-          <button type="button"><i class="fa fa-search"></i></button>
-        </div>
-        <button id="bar-search-responsive-toggle" class="responsive-element version-1" type="button"><i class="fa fa-search"></i></button>
-      </div>
-    </header>
 
     <header id="header" class="clearfix">
-      <div class="content-wrapper">
+      <div class="table full-height">
+        <div class="table-row full-height">
+          <div class="table-cell middle">
+            <h1 id="title">Amelia Stamps <span class="pottery">Pottery</span></h1>
+            <ul id="menu">
+              <li><a class="active" href="#!/gallery">Gallery</a></li>
+              <li><a href="#!/shows">Shows</a></li>
+              <li><a href="#!/bio">Artist Bio</a></li>
+              <li><a href="#!/contact">Contact</a></li>
+              <li><a href="#!/buy">Where to Buy</a></li>
+            </ul>
+            <ul id="social">
+              <li><a class="facebook" title="Facebook" href="https://www.facebook.com/pages/Amelia-Stamps-Pottery/118562484874768"><i class="fa fa-facebook-official"></i></a></li>
+              <li><a class="etsy" title="Etsy" href="https://www.etsy.com/shop/ameliastamps?ref=em">E</a></li>
+            </ul>
+            <span class="responsive-element" id="menu-toggle"><i class="fa fa-bars"></i></span>
+          </div>
+        </div>
       </div>
     </header>
 
-    <section id="main-wrapper">
-      <div class="content-wrapper">
-        <div id="main">     
+    <main id="main">
+      <div id="gallery" class="site-section active">
+        <div class="table full-height full-width">
+          <div class="table-row">
+            <div class="table-cell middle gallery-cell">
+              <section class="gallery active">
+                <h2>Highlighted work, 2011 to present</h2>
+                <ul>
+                  <li class="active"><img src="images/1.jpg" alt=""></li>
+                  <li><img src="images/2.jpg" alt=""></li>
+                  <li><img src="images/3.jpg" alt=""></li>
+                  <li><img src="images/4.jpg" alt=""></li>
+                  <li><img src="images/5.jpg" alt=""></li>
+                  <li><img src="images/6.jpg" alt=""></li>
+                  <li><img src="images/7.jpg" alt=""></li>
+                  <li><img src="images/8.jpg" alt=""></li>
+                </ul>
+              </section>
+              <section class="gallery">
+                <h2>Highlighted work, 2006 to 2010</h2>
+                <ul>
+                  <li><img src="images/b1.jpg" alt=""></li>
+                  <li><img src="images/b2.jpg" alt=""></li>
+                  <li><img src="images/b3.jpg" alt=""></li>
+                  <li><img src="images/b4.jpg" alt=""></li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="controls">
+          <a class="prev"><i class="fa fa-angle-left"></i></a>
+          <a class="next"><i class="fa fa-angle-right"></i></a>
         </div>
       </div>
-    </section>
-    <footer id="footer">
-    </footer>
 
-    <footer id="demo-controls">
-      <label for="page">Page</label>
-      <select name="page" id="page-toggle">
-        <option selected value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-      </select>
-      <label for="alpha">Option Alpha</label>
-      <select name="alpha" id="alpha-toggle">
-        <option selected value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-      </select>
-      <label for="beta">Option Beta</label>
-      <select name="beta" id="beta-toggle">
-        <option value="1">1</option>
-        <option selected value="2">2</option>
-        <option value="3">3</option>
-      </select>
-    </footer>
+      <div id="shows" class="site-section">
+        <div class="content-wrapper">
+          <h2>2016 Shows</h2>
+          <p>This is an updated list of shows, y'all.</p>
+          <div class="view view-shows">
+            <div class="views-content">
+              <div class="views-row">
+                <div class="views-field-field-date">April 1</div>
+                <div class="views-field-title"><a href="//google.com">KY Crafted</a></div>
+                <div class="views-field-field-location">Lexington, KY</div>
+              </div>
+              <div class="views-row">
+                <div class="views-field-field-date">May 10-14</div>
+                <div class="views-field-title"><a href="//google.com">Cherrokee Triangle</a></div>
+                <div class="views-field-field-location">Louisville, KY</div>
+              </div>
+              <div class="views-row">
+                <div class="views-field-field-date">May 1-3</div>
+                <div class="views-field-title"><a href="//google.com">Tennessee Craft</a></div>
+                <div class="views-field-field-location">Nashville, TN</div>
+              </div>
+              <div class="views-row">
+                <div class="views-field-field-date">May 8-10</div>
+                <div class="views-field-title"><a href="//google.com">Artisphere</a></div>
+                <div class="views-field-field-location">Greenville, SC</div>
+              </div>
+              <div class="views-row">
+                <div class="views-field-field-date">June 20</div>
+                <div class="views-field-title"><a href="//google.com">Pints for a Purpose</a></div>
+                <div class="views-field-field-location">Lexington, KY</div>
+              </div>
+              <div class="views-row">
+                <div class="views-field-field-date">April 1</div>
+                <div class="views-field-title"><a href="//google.com">KY Crafted</a></div>
+                <div class="views-field-field-location">Lexington, KY</div>
+              </div>
+              <div class="views-row">
+                <div class="views-field-field-date">May 10-14</div>
+                <div class="views-field-title"><a href="//google.com">Cherrokee Triangle</a></div>
+                <div class="views-field-field-location">Louisville, KY</div>
+              </div>
+              <div class="views-row">
+                <div class="views-field-field-date">May 1-3</div>
+                <div class="views-field-title"><a href="//google.com">Tennessee Craft</a></div>
+                <div class="views-field-field-location">Nashville, TN</div>
+              </div>
+              <div class="views-row">
+                <div class="views-field-field-date">May 8-10</div>
+                <div class="views-field-title"><a href="//google.com">Artisphere</a></div>
+                <div class="views-field-field-location">Greenville, SC</div>
+              </div>
+              <div class="views-row">
+                <div class="views-field-field-date">June 20</div>
+                <div class="views-field-title"><a href="//google.com">Pints for a Purpose</a></div>
+                <div class="views-field-field-location">Lexington, KY</div>
+              </div>
+              <div class="views-row">
+                <div class="views-field-field-date">April 1</div>
+                <div class="views-field-title"><a href="//google.com">KY Crafted</a></div>
+                <div class="views-field-field-location">Lexington, KY</div>
+              </div>
+              <div class="views-row">
+                <div class="views-field-field-date">May 10-14</div>
+                <div class="views-field-title"><a href="//google.com">Cherrokee Triangle</a></div>
+                <div class="views-field-field-location">Louisville, KY</div>
+              </div>
+              <div class="views-row">
+                <div class="views-field-field-date">May 1-3</div>
+                <div class="views-field-title"><a href="//google.com">Tennessee Craft</a></div>
+                <div class="views-field-field-location">Nashville, TN</div>
+              </div>
+              <div class="views-row">
+                <div class="views-field-field-date">May 8-10</div>
+                <div class="views-field-title"><a href="//google.com">Artisphere</a></div>
+                <div class="views-field-field-location">Greenville, SC</div>
+              </div>
+              <div class="views-row">
+                <div class="views-field-field-date">June 20</div>
+                <div class="views-field-title"><a href="//google.com">Pints for a Purpose</a></div>
+                <div class="views-field-field-location">Lexington, KY</div>
+              </div>
+              <div class="views-row">
+                <div class="views-field-field-date">April 1</div>
+                <div class="views-field-title"><a href="//google.com">KY Crafted</a></div>
+                <div class="views-field-field-location">Lexington, KY</div>
+              </div>
+              <div class="views-row">
+                <div class="views-field-field-date">May 10-14</div>
+                <div class="views-field-title"><a href="//google.com">Cherrokee Triangle</a></div>
+                <div class="views-field-field-location">Louisville, KY</div>
+              </div>
+              <div class="views-row">
+                <div class="views-field-field-date">May 1-3</div>
+                <div class="views-field-title"><a href="//google.com">Tennessee Craft</a></div>
+                <div class="views-field-field-location">Nashville, TN</div>
+              </div>
+              <div class="views-row">
+                <div class="views-field-field-date">May 8-10</div>
+                <div class="views-field-title"><a href="//google.com">Artisphere</a></div>
+                <div class="views-field-field-location">Greenville, SC</div>
+              </div>
+              <div class="views-row">
+                <div class="views-field-field-date">June 20</div>
+                <div class="views-field-title"><a href="//google.com">Pints for a Purpose</a></div>
+                <div class="views-field-field-location">Lexington, KY</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="bio" class="site-section">
+        <div class="content-wrapper">
+          <img src="http://www.ameliastamps.com/storage/IMG_3580wc.jpg?__SQUARESPACE_CACHEVERSION=1374296075097" alt="Amelia">
+          <p>Growing up in a family of artists has taught me to appreciate the handmade object. My parents both worked in clay when I was very young. I grew up using their pottery in the home and it inherently became something of great importance. I did not actually make my first piece of pottery until high school art class. At that point I became interested in not only the nostalgia of ceramics, but also of clay as a material of expression. In college I wanted to further my knowledge of clay so I spent most free hours of the day in the studio, attending workshops and working for different potters. By surrounding myself in this atmosphere I felt a great sense of community that further supported my passions.</p>
+          <p>I find a great sense of pride in being a potter because I can carry on the tradition of working with clay while expressing my love for handmade ceramics. I believe that crafting well made objects holds a deep meaning to those working with their hands. We rely on the material to translate an inner language.  It is a language of patience, diligence, contemplation and expression. I want my work to communicate these ideas, as well as, speak of the sensualness of clay as a material. My concentration rests on the idea of making forms that breathe a quiet strength that which holds the users attention, even if for a moment.</p>
+          <p>In 2002 I received a BFA in Ceramics from the University of North Carolina in Asheville.  After completing college I began working in my own studio, 'Stamps Pottery'. I received several artist grants to help with the purchase of studio equipment. My work cycle revolves around exhibiting in retail and wholesale shows, online gallery sales and commissions.</p>
+          <p>My husband <a href="http://www.hunterstampssculpture.com/">Hunter Stamps</a>, 2 daughters and I happily call the bluegrass of Kentucky home. Much of the year you can find us traveling to craft shows in the region. Please check out my show schedule or find my work on Etsy.</p>
+        </div>
+        </div>
+
+      <div id="buy" class="site-section">
+        <div class="content-wrapper">
+          <h2>Find My Pottery</h2> 
+          <p><a class="etsy" title="Etsy" href="https://www.etsy.com/shop/ameliastamps?ref=em">on Etsy</a></p>
+          <h3>or at these fine craft galleries:</h3>
+          <ul class="link-list">
+            <li id="link5071373">
+              <div class="title"><a onclick="this.target='new';" href="http://http://completelykentucky.com/">Completely Kentucky. 237 W. Broadway St. Frankfort,&nbsp;KY</a></div>
+              <div class="description"></div>
+            </li>
+            <li id="link5066865">
+              <div class="title"><a onclick="this.target='new';" href="http://www.artiquegallery.com">ARTIQUE. Downtown &amp; Lexington Green - Lexington,&nbsp;KY</a></div>
+              <div class="description"></div>
+            </li>
+            <li id="link5066866">
+              <div class="title"><a onclick="this.target='new';" href="http://www.kentuckyartisancenter.ky.gov">KY ARTISAN CENTER. 200 Artisan Way - Berea,&nbsp;KY</a></div>
+              <div class="description"></div>
+            </li>
+            <li id="link5066864">
+              <div class="title"><a onclick="this.target='new';" href="http://http://www.iowa-artisans-gallery.com/">IOWA ARTISANS GALLERY. 207 East Washington Street - Iowa City,&nbsp;IA</a></div>
+              <div class="description"></div>
+            </li>
+            <li id="link5066863">
+              <div class="title"><a onclick="this.target='new';" href="http://http://www.newmorninggallerync.com">NEW MORNING GALLERY. 7 Boston Way - Asheville,&nbsp;NC</a></div>
+              <div class="description"></div>
+            </li>
+            <li id="link5066867">
+              <div class="title"><a onclick="this.target='new';" href="http://http://www.redlodgeclaycenter.com/artists.php?type=artist#.UeoSD4JSbQM">RED LODGE CLAY CENTER. 123 S Broadway Ave, Red Lodge,&nbsp;MT</a></div>
+              <div class="description"></div>
+            </li>
+            <li id="link5066868">
+              <div class="title"><a onclick="this.target='new';" href="http://http://www.craftsmanhousegallery.com">CRAFTSMAN HOUSE GALLERY. 2955 Central Ave - Saint Petersburg,&nbsp;FL</a></div>
+              <div class="description"></div>
+            </li>
+            <li id="link5066869">
+              <div class="title"><a onclick="this.target='new';" href="http://www.glassgrowersgallery.com">GLASS GLOWERS GALLERY. 10 E 5th St - Erie,&nbsp;PA</a></div>
+              <div class="description"></div>
+            </li>
+            <li id="link5066870">
+              <div class="title"><a onclick="this.target='new';" href="http://www.leftbankgallery.com">LEFT BANK GALLERY. 25 Commercial Street - Wellfleet,&nbsp;MA</a></div>
+              <div class="description"></div>
+            </li>
+            <li id="link5097276">
+              <div class="title"><a onclick="this.target='new';" href="http://www.freehand.com/">FREEHAND GALLERY. 8413 W. 3rd Street, Los Angeles,&nbsp;CA</a></div>
+              <div class="description"></div>
+            </li>
+            <li id="link5097277">
+              <div class="title"><a onclick="this.target='new';" href="http://http://claylink.com/zen/index.php?main_page=index&amp;cPath=242_153">CHARLIE CUMMINGS. Online&nbsp;Gallery</a></div>
+              <div class="description"></div>
+            </li>
+            <li id="link5111514">
+              <div class="title"><a onclick="this.target='new';" href="http://companiongallery.com/">COMPANION GALLERY. 3638 East Mitchell Street- Humbolt,&nbsp;TN</a></div>
+              <div class="description"></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="contact" class="site-section">
+        <div class="content-wrapper">
+          It's gonna be a contact form!
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer">&copy;2016 Amelia Stamps</footer>
   </div>
 </body>
 </html>

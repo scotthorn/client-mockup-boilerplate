@@ -1,82 +1,67 @@
 $(document).ready(function(){
 	var body = $("body");
-	var desktopWidth = 1024;
+	$('.prev').click(function(){
+		var current = $('.gallery.active li.active'),
+			next = current.prev(),
+			changeGallery = false;
 
-	$('#main-version').change(function(){
-		var select = $(this),
-			val = select.val();
-			
-		body.removeClass(function(index, css) {
-		    return (css.match(/\bversion-\S+/g) || []).join(' ');
-		})
-		setTimeout(function(){
-			body.addClass('version-' + val);
-		}, 100);
-	}).change();
-	$('#page-toggle').change(function(){
-		var select = $(this),
-			val = select.val();
-			
-		body.removeClass(function(index, css) {
-		    return (css.match(/\bpage-\S+/g) || []).join(' ');
-		})
-		setTimeout(function(){
-			body.addClass('page-' + val);
-		}, 100);
-	}).change();
-	$('#bar-toggle').change(function(){
-		var select = $(this),
-			val = select.val();
-			
-		body.removeClass(function(index, css) {
-		    return (css.match(/\bbar-\S+/g) || []).join(' ');
-		})
-		setTimeout(function(){
-			body.addClass('bar-' + val);
-		}, 100);
-	}).change();
+		if (next.length == 0) {
+			changeGallery = true;
+			var currentGallery = current.parents('.gallery'),
+				nextGallery = currentGallery.prev();
 
-	$('#bar-menu .menu-toggle').click(function(){
-		if (body.hasClass('bar-menu-open')) {
-			body.removeClass('bar-menu-open');
-		}
-		else {
-			window.scrollTo(0,0);
-			body.addClass('bar-menu-open');
-			// On desktops, auto-focus on the search box.
-			if (window.innerWidth >= desktopWidth) {
-				setTimeout(function(){
-					// Delayed to avoid an odd bug where the search box jumps.
-					$('#bar-menu-search input').focus();
-				}, 100);
+			if (nextGallery.length == 0) {
+				nextGallery = $('.gallery:last-child');
 			}
+			next = nextGallery.find('li:last-child');
 		}
-		
-	});
-	
-	$('#menu-backwash').click(function(){
-		body.removeClass('bar-menu-open');
+		changeGalleryImage(next, changeGallery);
+	})
+	$('.next').click(function(){
+		var current = $('.gallery.active li.active'),
+			next = current.next(),
+			changeGallery = false;
+
+		if (next.length == 0) {
+			changeGallery = true;
+			var currentGallery = current.parents('.gallery'),
+				nextGallery = currentGallery.next();
+
+			if (nextGallery.length == 0) {
+				nextGallery = $('.gallery:first-child');
+			}
+			next = nextGallery.find('li:first-child');
+		}
+		changeGalleryImage(next, changeGallery);
+	})
+
+	function changeGalleryImage(newImage, changeGallery) {
+		if (changeGallery) {
+			$('.gallery.active').removeClass('active');
+			newImage.parents('.gallery').addClass('active');
+		}
+		$('.gallery li.active').removeClass('active');
+		newImage.addClass('active');
+	}
+
+	function openSection(section) {
+		$('.site-section.active, #menu a.active').removeClass('active');
+		$('.site-section#' + section + ', #menu a[href="#!/' + section + '"]').addClass('active');
+	}
+
+	routie({
+		'!/:section': function(section) {
+			openSection(section);
+		},
+		'': function() {
+			console.log('gallery default');
+			openSection('gallery');
+		}
 	});
 
-	$('#site-search').hover(function(){
-		if (window.innerWidth >= desktopWidth) {
-			$('#site-search input').focus();
-		}
-	});
-
-	$('#site-search input').focus(function(){
-		$('#site-search').addClass('active');
-	}).blur(function(){
-		$('#site-search').removeClass('active');
-	});
-
-	$('#site-search button').click(function(e){
-		if ($('#site-search input').val() == '') {
-			e.preventDefault();
-			$('#site-search input').focus();
-			return false;
-		}
-	});
+	$('#menu-toggle').click(function(){
+		$('#menu').toggleClass('responsive-open');
+	})
 });
 
 
