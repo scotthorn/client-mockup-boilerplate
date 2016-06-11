@@ -10,6 +10,7 @@
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="routie.min.js"></script>
+  <script src="isotope.pkgd.min.js"></script>
   <script src="script.js"></script>
 </head>
 <body>
@@ -21,14 +22,15 @@
           <div class="table-cell middle">
             <h1 id="title">Amelia Stamps <span class="pottery">Pottery</span></h1>
             <ul id="menu">
-              <li><a class="active" href="#!/gallery">Gallery</a></li>
-              <li><a href="#!/shows">Shows</a></li>
+              <li><a class="active" href="#!/photos">Photos</a></li>
+              <li><a href="#!/purchase">Purchase</a></li>
+              <li><a href="#!/shows-galleries">Shows &amp; Galleries</a></li>
               <li><a href="#!/bio">Artist Bio</a></li>
               <li><a href="#!/contact">Contact</a></li>
-              <li><a href="#!/buy">Where to Buy</a></li>
             </ul>
             <ul id="social">
               <li><a class="facebook" title="Facebook" href="https://www.facebook.com/pages/Amelia-Stamps-Pottery/118562484874768"><i class="fa fa-facebook-official"></i></a></li>
+              <li><a href="https://www.instagram.com/stampspottery/" class="instagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
               <li><a class="etsy" title="Etsy" href="https://www.etsy.com/shop/ameliastamps?ref=em">E</a></li>
             </ul>
             <span class="responsive-element" id="menu-toggle"><i class="fa fa-bars"></i></span>
@@ -38,44 +40,71 @@
     </header>
 
     <main id="main">
-      <div id="gallery" class="site-section active">
-        <div class="table full-height full-width">
-          <div class="table-row">
-            <div class="table-cell middle gallery-cell">
-              <section class="gallery active">
-                <h2>Highlighted work, 2011 to present</h2>
-                <ul>
-                  <li class="active"><img src="images/1.jpg" alt=""></li>
-                  <li><img src="images/2.jpg" alt=""></li>
-                  <li><img src="images/3.jpg" alt=""></li>
-                  <li><img src="images/4.jpg" alt=""></li>
-                  <li><img src="images/5.jpg" alt=""></li>
-                  <li><img src="images/6.jpg" alt=""></li>
-                  <li><img src="images/7.jpg" alt=""></li>
-                  <li><img src="images/8.jpg" alt=""></li>
-                </ul>
-              </section>
-              <section class="gallery">
-                <h2>Highlighted work, 2006 to 2010</h2>
-                <ul>
-                  <li><img src="images/b1.jpg" alt=""></li>
-                  <li><img src="images/b2.jpg" alt=""></li>
-                  <li><img src="images/b3.jpg" alt=""></li>
-                  <li><img src="images/b4.jpg" alt=""></li>
-                </ul>
-              </section>
-            </div>
-          </div>
+      <div id="photos" class="site-section active">
+        <div class="gallery-wrapper">
+          <section class="gallery active">
+            <h2>Highlighted work, 2011 to present</h2>
+            <ul>
+              <li class="active"><div class="table full-height full-width"><div class="table-row"><div class="table-cell middle gallery-cell"><img src="images/gallery1.jpg" alt=""></div></div></div></li>
+              <li><div class="table full-height full-width"><div class="table-row"><div class="table-cell middle gallery-cell"><img src="images/gallery2.jpg" alt=""></div></div></div></li>
+              <li><div class="table full-height full-width"><div class="table-row"><div class="table-cell middle gallery-cell"><img src="images/gallery3.jpg" alt=""></div></div></div></li>
+              <li><div class="table full-height full-width"><div class="table-row"><div class="table-cell middle gallery-cell"><img src="images/gallery4.jpg" alt=""></div></div></div></li>
+              <li><div class="table full-height full-width"><div class="table-row"><div class="table-cell middle gallery-cell"><img src="images/gallery5.jpg" alt=""></div></div></div></li>
+              <li><div class="table full-height full-width"><div class="table-row"><div class="table-cell middle gallery-cell"><img src="images/gallery6.jpg" alt=""></div></div></div></li>
+              <li><div class="table full-height full-width"><div class="table-row"><div class="table-cell middle gallery-cell"><img src="images/gallery7.jpg" alt=""></div></div></div></li>
+              <li><div class="table full-height full-width"><div class="table-row"><div class="table-cell middle gallery-cell"><img src="images/gallery8.jpg" alt=""></div></div></div></li>
+            </ul>
+          </section>
+          <section class="gallery">
+            <h2>Highlighted work, 2006 to 2010</h2>
+            <ul>
+              <li><div class="table full-height full-width"><div class="table-row"><div class="table-cell middle gallery-cell"><img src="images/gallery9.jpg" alt=""></div></div></div></li>
+              <li><div class="table full-height full-width"><div class="table-row"><div class="table-cell middle gallery-cell"><img src="images/gallery10.jpg" alt=""></div></div></div></li>
+              <li><div class="table full-height full-width"><div class="table-row"><div class="table-cell middle gallery-cell"><img src="images/gallery11.jpg" alt=""></div></div></div></li>
+              <li><div class="table full-height full-width"><div class="table-row"><div class="table-cell middle gallery-cell"><img src="images/gallery12.jpg" alt=""></div></div></div></li>
+              <li><div class="table full-height full-width"><div class="table-row"><div class="table-cell middle gallery-cell"><img src="images/gallery13.jpg" alt=""></div></div></div></li>
+              <li><div class="table full-height full-width"><div class="table-row"><div class="table-cell middle gallery-cell"><img src="images/gallery14.jpg" alt=""></div></div></div></li>
+            </ul>
+          </section>
         </div>
 
-
+        <div id="thumbs-link"><a href="#!/thumbnails"><i class="fa fa-th-large"></i><em>Thumbnails</em></a></div>
         <div id="controls">
           <a class="prev"><i class="fa fa-angle-left"></i></a>
           <a class="next"><i class="fa fa-angle-right"></i></a>
         </div>
       </div>
 
-      <div id="shows" class="site-section">
+      <div id="thumbnails" class="site-section active">
+        <div class="thumbnail-wrapper content-wrapper">
+          <section class="thumbs">
+            <h2>Highlighted work, 2011 to present</h2>
+            <ul>
+              <li><img src="images/gallery1.jpg" class="horizontal" alt=""></li>
+              <li><img src="images/gallery2.jpg" alt=""></li>
+              <li><img src="images/gallery8.jpg" alt=""></li>
+              <li><img src="images/gallery4.jpg" alt=""></li>
+              <li><img src="images/gallery5.jpg" alt=""></li>
+              <li><img src="images/gallery6.jpg" class="horizontal" alt=""></li>
+              <li><img src="images/gallery7.jpg" alt=""></li>
+              <li><img src="images/gallery3.jpg" alt=""></li>
+            </ul>
+          </section>
+          <section class="thumbs">
+            <h2>Highlighted work, 2006 to 2010</h2>
+            <ul>
+              <li><img src="images/gallery9.jpg" class="horizontal" alt=""></li>
+              <li><img src="images/gallery10.jpg" alt=""></li>
+              <li><img src="images/gallery11.jpg" alt=""></li>
+              <li><img src="images/gallery12.jpg" alt=""></li>
+              <li><img src="images/gallery13.jpg" alt=""></li>
+              <li><img src="images/gallery14.jpg" class="horizontal" alt=""></li>
+            </ul>
+          </section>
+        </div>
+      </div>
+
+      <div id="shows-galleries" class="site-section">
         <div class="content-wrapper">
           <h2>2016 Shows</h2>
           <p>This is an updated list of shows, y'all.</p>
@@ -184,23 +213,9 @@
             </div>
           </div>
         </div>
-      </div>
-
-      <div id="bio" class="site-section">
-        <div class="content-wrapper">
-          <img src="http://www.ameliastamps.com/storage/IMG_3580wc.jpg?__SQUARESPACE_CACHEVERSION=1374296075097" alt="Amelia">
-          <p>Growing up in a family of artists has taught me to appreciate the handmade object. My parents both worked in clay when I was very young. I grew up using their pottery in the home and it inherently became something of great importance. I did not actually make my first piece of pottery until high school art class. At that point I became interested in not only the nostalgia of ceramics, but also of clay as a material of expression. In college I wanted to further my knowledge of clay so I spent most free hours of the day in the studio, attending workshops and working for different potters. By surrounding myself in this atmosphere I felt a great sense of community that further supported my passions.</p>
-          <p>I find a great sense of pride in being a potter because I can carry on the tradition of working with clay while expressing my love for handmade ceramics. I believe that crafting well made objects holds a deep meaning to those working with their hands. We rely on the material to translate an inner language.  It is a language of patience, diligence, contemplation and expression. I want my work to communicate these ideas, as well as, speak of the sensualness of clay as a material. My concentration rests on the idea of making forms that breathe a quiet strength that which holds the users attention, even if for a moment.</p>
-          <p>In 2002 I received a BFA in Ceramics from the University of North Carolina in Asheville.  After completing college I began working in my own studio, 'Stamps Pottery'. I received several artist grants to help with the purchase of studio equipment. My work cycle revolves around exhibiting in retail and wholesale shows, online gallery sales and commissions.</p>
-          <p>My husband <a href="http://www.hunterstampssculpture.com/">Hunter Stamps</a>, 2 daughters and I happily call the bluegrass of Kentucky home. Much of the year you can find us traveling to craft shows in the region. Please check out my show schedule or find my work on Etsy.</p>
-        </div>
-        </div>
-
-      <div id="buy" class="site-section">
-        <div class="content-wrapper">
-          <h2>Find My Pottery</h2> 
-          <p><a class="etsy" title="Etsy" href="https://www.etsy.com/shop/ameliastamps?ref=em">on Etsy</a></p>
-          <h3>At these fine craft galleries:</h3>
+        <div id="galleries" class="content-wrapper">
+          <h2>Galleries</h2> 
+          <h3>My work can be found at these fine craft galleries:</h3>
           <ul class="link-list featured">
             <li id="link5097277">
               <div class="title"><a href="http://charliecummingsgallery.com/index.php?main_page=index&cPath=242_153"><em>Charlie Cummins</em></a>. Online&nbsp;Gallery</div>
@@ -257,9 +272,26 @@
         </div>
       </div>
 
+      <div id="purchase" class="site-section">
+        
+      </div>
+
+
+      <div id="bio" class="site-section">
+        <div class="content-wrapper">
+          <img src="images/amelia.jpg" alt="Amelia">
+          <p>Growing up in a family of artists has taught me to appreciate the handmade object. My parents both worked in clay when I was very young. I grew up using their pottery in the home and it inherently became something of great importance. I did not actually make my first piece of pottery until high school art class. At that point I became interested in not only the nostalgia of ceramics, but also of clay as a material of expression. In college I wanted to further my knowledge of clay so I spent most free hours of the day in the studio, attending workshops and working for different potters. By surrounding myself in this atmosphere I felt a great sense of community that further supported my passions.</p>
+          <p>I find a great sense of pride in being a potter because I can carry on the tradition of working with clay while expressing my love for handmade ceramics. I believe that crafting well made objects holds a deep meaning to those working with their hands. We rely on the material to translate an inner language.  It is a language of patience, diligence, contemplation and expression. I want my work to communicate these ideas, as well as, speak of the sensualness of clay as a material. My concentration rests on the idea of making forms that breathe a quiet strength that which holds the users attention, even if for a moment.</p>
+          <p>In 2002 I received a BFA in Ceramics from the University of North Carolina in Asheville.  After completing college I began working in my own studio, 'Stamps Pottery'. I received several artist grants to help with the purchase of studio equipment. My work cycle revolves around exhibiting in retail and wholesale shows, online gallery sales and commissions.</p>
+          <p>My husband <a href="http://www.hunterstampssculpture.com/">Hunter Stamps</a>, 2 daughters and I happily call the bluegrass of Kentucky home. Much of the year you can find us traveling to craft shows in the region. Please check out my show schedule or find my work on Etsy.</p>
+        </div>
+      </div>
+
+
       <div id="contact" class="site-section">
         <div class="content-wrapper">
-          It's gonna be a contact form!
+          <p>It's gonna be a contact form!</p>
+          <img src="images/atwheel.jpg" alt="">
         </div>
       </div>
     </main>
