@@ -695,6 +695,15 @@ footer {
     cursor: inherit;
     max-width: 90%;
   }
+  .view-items-available .views-row {
+    width: 430px;
+  }
+  .view-items-available .views-row:nth-child(3n) {
+    background: #fcfbfb;
+  }
+  .view-items-available .views-row:nth-child(4n) {
+    background: #fcf4f6;
+  }
 }
 
 @media screen and (max-width: 599px) {
@@ -706,6 +715,9 @@ footer {
   .content-wrapper {
     padding-left: 0;
     padding-right: 0;
+  }
+  .view-items-available .views-row {
+    width: 100%;
   }
 }
 
