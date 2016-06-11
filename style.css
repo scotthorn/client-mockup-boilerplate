@@ -500,6 +500,7 @@ footer {
   }
   #photos {
     position: relative;
+    height: auto;
   }
   body,html {
     overflow: visible;
@@ -532,31 +533,34 @@ footer {
   .site-section.active {
     display: block;
   }
-  #controls {
+  #controls,
+  #thumbs-link {
+    display: none;
+  }
+  .gallery {
     position: static;
   }
-  .next {
-    position: absolute;
-    right: 0;
-    top: 44%;
-    z-index: 20;
+  .gallery h2,
+  .gallery:not(.active) h2 {
+    position: static;
+    margin: 1.8em 0 1em;
+    opacity: 1;
+    display: block;
   }
-  .prev {
-    position: absolute;
-    left: 0;
-    top: 44%;
-    z-index: 20;
+  .gallery ul {
+    height: auto;
+  }
+  .gallery li {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.1s;
+    height: 100%;
+    position: static;
+    margin-bottom: 42px;
   }
   .gallery img {
-    max-width: 94%;
-  }
-  #thumbs-link {
-    width: 100%;
-    text-align: center;
-    bottom: 42px;
-    left: 0;
-    right: 0;
-    font-size: 1.3em;
+    cursor: inherit;
+    max-width: 666px;
   }
 }
 
