@@ -691,6 +691,10 @@ footer {
     float: none;
     max-width: 100%;;
   }
+  .gallery img {
+    cursor: inherit;
+    max-width: 90%;
+  }
 }
 
 @media screen and (max-width: 599px) {
