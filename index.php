@@ -46,6 +46,7 @@
         <nav id="main-nav">
           <ul class="menu">
             <li><a href="#writing">Writing</a></li>
+            <li><a href="//blog.evanwinters.com">Blog</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#mailing-list">Mailing List</a></li>
             <li><a href="#contact">Contact</a></li>
