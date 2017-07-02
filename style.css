@@ -126,33 +126,24 @@ body.contact #header h1:after {
 }
 #header .buy-links {
   background: #ccc;
-  display: inline-block;
+  display: flex;
   padding: 19px 21px;
   border-radius: 4px;
 }
 #header .buy-links h2 {
-  font-size: 23px;
+  font-size: 27px;
   color: white;
   margin-bottom: 9px;
   display: block;
 }
-#header .buy-links li:nth-child(1) {
-  display: block;
-}
-#header .buy-links li {
-  position: relative;
-  z-index: 10;
-}
-#header .buy-links a h2 {
-}
 #header .buy-links a:hover {
   background: #bbb;
 }
-#header .buy-links .comment {
-  color: #666;
-  font-size: 14px;
-  margin-top: 4px;
+#header .buy-links .image {
+  width: 42px;
+  margin-right: 7px;
 }
+
 #main-nav .social-media a {
   opacity: 0.5;
   font-size: 2.3em;
