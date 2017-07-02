@@ -14,7 +14,10 @@
       <div class="middle table-cell">
         <h1><a href="/"><span>Evan</span> <span>Winters</span></a></h1>  
         <div class="buy-links">
-          <div class="image"><img src="awt00.jpg" alt="A Winter's Tale, Issue Zero, Cover"></div>
+          <div class="image">
+            <a href="#writing">
+              <img src="awt00.jpg" alt="A Winter's Tale, Issue Zero, Cover"></div>
+            </a>
           <div class="content">
             <h2>A Winter's Tale, Issue Zero</h2>
             <div class="free">Free with your subscription to our newsletter. <a href="#writing">Details</a></div>
@@ -61,10 +64,10 @@
       <a href="#header" class="top-link" title="back to top"><i class="fa fa-chevron-up"></i></a>
       <h2>Writing</h2>
       <ul>
-        <li>
+        <li class="clearfix">
           <img src="awt00.jpg" alt="A Winter's Tale, Issue Zero, Cover" class="book-image">
           <h3>A Winter's Tale, Issue Zero</h3>
-          <p>Sign up of our email newsletter to receive links to free downloads for this graphic novel, in both PDF and comic book archive files.</p>
+          <p>Sign up for our email newsletter to receive links to free downloads for this graphic novel, in both PDF and comic book archive files.</p>
           <!-- Begin MailChimp Signup Form -->
             <div id="mc_embed_signup">
               <form action="//evanwinters.us11.list-manage.com/subscribe/post?u=a7529490683f9c5c822dc89d6&amp;id=d8b66731b8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -84,12 +87,12 @@
             </div>
 
             <!--End mc_embed_signup-->
-            <p class="note"><em>* Your email stays private, and will not be sold or shared with anyone. Unsubscribe anytime.</em></p>
+            <p class="note"><em>* Your email stays private, and will not be sold or shared with anyone.<br>Unsubscribe anytime.</em></p>
             <p>After a long search for her lost sister, Anna learned the grisly truth and will have her justice.</p>
             <p>Her captors may think they have her under control, but Anna is determined not to let this be the end of the family story.</p>
 
         </li>
-        <li>
+        <li class="clearfix">
           <a href="http://amzn.to/1WQpnAT" title="View this book on Amazon.com"><img class="book-image" src="witch.jpg" alt="The Witch of Bracken's Hollow"></a>
           <h3>The Witch of Bracken's Hollow</h3>
           <p>
